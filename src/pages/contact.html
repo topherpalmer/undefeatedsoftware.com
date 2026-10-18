@@ -1,0 +1,46 @@
+<!-- title: Contact | Undefeated Software | description: Book a call with Undefeated Software about a workflow you want agents to take on. -->
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Tell us about the work</h1>
+    <p class="lede">A 30-minute call is enough to tell whether agents can take it on, and what it would take.</p>
+  </div>
+</section>
+
+<section class="band" id="start">
+  <div class="wrap contact">
+    <div class="prose">
+      <h2>Email us</h2>
+      <div class="email-line">
+        <code id="email-address">hello@undefeatedsoftware.com</code>
+        <button class="pill line" type="button" id="copy-email">Copy</button>
+      </div>
+      <p>Tell us what the workflow is today, who owns it, and what result should change. We reply within one business day.</p>
+    </div>
+    <form id="contact-form">
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="company">Company</label>
+        <input id="company" name="company" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="area">What should agents take on?</label>
+        <select id="area" name="area">
+          <option>Software delivery</option>
+          <option>Go-to-market</option>
+          <option>Back-office operations</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">The workflow today</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Who does it, how often, and what goes wrong"></textarea>
+      </div>
+      <button class="pill solid big" type="submit">Write the email</button>
+      <p class="form-note" id="form-status" aria-live="polite">This opens your email app with the message filled in.</p>
+    </form>
+  </div>
+</section>

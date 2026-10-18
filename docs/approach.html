@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How We Work | Undefeated Software</title>
+<meta name="description" content="How our agents are supervised: fixed gates, named people deciding, evidence on every conclusion and your data kept separate.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta property="og:title" content="How We Work | Undefeated Software">
+<meta property="og:description" content="How our agents are supervised: fixed gates, named people deciding, evidence on every conclusion and your data kept separate.">
+<meta name="theme-color" content="#1e9fe3">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,600..900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="site-head" data-open="false">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html" aria-label="Undefeated Software, home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+  <rect width="32" height="32" rx="9" fill="var(--accent)"/>
+  <path d="M9.5 8.5v8.2a6.5 6.5 0 0 0 13 0V8.5" fill="none" stroke="var(--accent-ink)" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="16" cy="9.6" r="2.1" fill="var(--accent-ink)"/>
+</svg>
+      <span class="brand-name">Undefeated<span>.</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="services.html">Services</a>
+      <a href="approach.html" aria-current="page">How we work</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="head-actions">
+      <a class="pill line" href="contact.html">Contact us</a>
+      <a class="pill solid" href="contact.html#start">Book a call</a>
+    </div>
+    <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">How we work</span>
+    <h1>Agents work between the gates. People decide at them.</h1>
+    <p class="lede">Automation earns trust when you can see what it did, why, and who approved it. Everything we build runs on that rule.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap split">
+    <div class="prose">
+      <span class="eyebrow">The gates</span>
+      <h2>Every change takes the same path</h2>
+      <p>A feature starts as a short brief and a spec. An agent reviews the spec before anyone signs it, then scores how buildable it is against your code. An engineer co-signs that score.</p>
+      <p>A design agent lays out the flows and states, and a person signs the design off. Only then does a builder agent write code, on its own branch, behind a feature flag. A QA agent runs the tests and checks every acceptance criterion with the flag on and off.</p>
+      <p>A person accepts the result and decides when it is released. Agents never move work past a gate themselves.</p>
+    </div>
+    <div class="gates" aria-label="Who decides at each gate">
+      <div class="gate person"><b>Discovery</b><span><strong>A person</strong> accepts the brief: the problem, who has it, and why now.</span></div>
+      <div class="gate person"><b>Spec</b><span>Agent review, then <strong>a person signs.</strong></span></div>
+      <div class="gate person"><b>Viability</b><span>Agent scores; <strong>an engineer co-signs.</strong></span></div>
+      <div class="gate person"><b>Design</b><span>Agent drafts; <strong>a person signs off.</strong></span></div>
+      <div class="gate"><b>Build</b><span>Agent, on its own branch, behind a flag.</span></div>
+      <div class="gate"><b>QA</b><span>Agent checks every criterion, flag on and off.</span></div>
+      <div class="gate person"><b>Acceptance</b><span><strong>A person</strong> tries it and accepts it.</span></div>
+      <div class="gate person"><b>Release</b><span><strong>A person</strong> releases it, then measures it.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band wash">
+  <div class="wrap">
+    <div class="band-head">
+      <span class="eyebrow">Principles</span>
+      <h2>What we hold ourselves to</h2>
+    </div>
+    <div class="cards">
+      <article class="card"><h3>Evidence on every conclusion</h3><p>When an agent concludes something, it shows what it read: the files, the posts, the records. A finding without sources is dropped, not shown.</p></article>
+      <article class="card"><h3>Your data stays yours</h3><p>Each client's data is kept apart from every other client's, and credentials never reach an agent. Agents use your systems through access you grant and can withdraw.</p></article>
+      <article class="card"><h3>A person owns every decision</h3><p>Anything that reaches a customer, changes money or affects a person's job is decided by a named person, with the reason recorded.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap split">
+    <div class="prose">
+      <span class="eyebrow">On the record</span>
+      <h2>See how every change got there</h2>
+      <p>Every gate decision, every agent run and its cost is written to an audit log as it happens. For any change in production you can see who approved it, what the agents produced and how long it waited at each step.</p>
+    </div>
+    <div class="prose">
+      <span class="eyebrow">Your tools</span>
+      <h2>It runs on your systems</h2>
+      <p>The work lands in your own repository, your own cloud and your own accounts. Features ship behind flags you control, and you can switch any of them off without a deploy.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band wash">
+  <div class="wrap cta-band">
+    <h2>Want to see the gates on your own work?</h2>
+    <a class="pill solid big" href="contact.html#start">Book a call</a>
+  </div>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-row">
+    <div style="display:grid;gap:10px;max-width:380px">
+      <a class="brand" href="index.html" aria-label="Undefeated Software, home"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+  <rect width="32" height="32" rx="9" fill="var(--accent)"/>
+  <path d="M9.5 8.5v8.2a6.5 6.5 0 0 0 13 0V8.5" fill="none" stroke="var(--accent-ink)" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="16" cy="9.6" r="2.1" fill="var(--accent-ink)"/>
+</svg><span class="brand-name">Undefeated<span>.</span></span></a>
+      <p>AI business automation. Agents build your software and run your workflows; your people decide at every gate.</p>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="services.html">Services</a>
+      <a href="approach.html">How we work</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>&copy; 2026 Undefeated Software</p>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
