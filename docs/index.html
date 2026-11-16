@@ -56,7 +56,7 @@
     </div>
     <div data-mode-pane="build">
       <h1>AI agents that build your software</h1>
-      <p class="sub">A factory of agents takes a written spec to a reviewed, tested pull request in your own repository. Your people approve the spec, the design and the release.</p>
+      <p class="sub">A factory of agents takes what you need from a plan to tested, working software in your own repository. Your people approve what gets built and when it goes live.</p>
     </div>
     <div data-mode-pane="run" hidden>
       <h1>AI agents that run your workflows</h1>
@@ -67,17 +67,16 @@
       <a class="pill line big" href="approach.html">See how it works</a>
     </div>
 
-    <div class="term" role="img" aria-label="Example: a feature moving through the agents' gates, and a day of content drafted and approved">
+    <div class="term" role="img" aria-label="Example: a feature on its way to production, and a day of content drafted and approved">
       <div class="term-bar"><i></i><i></i><i></i><span data-mode-pane="build">undefeated factory</span><span data-mode-pane="run" hidden>undefeated ops</span></div>
 <pre data-mode-pane="build"><span class="dim">project</span>  patient-portal          <span class="dim">example</span>
-<span class="k">› PRD</span>    "Online booking with an insurance check"
+<span class="k">› Feature</span> "Online booking with an insurance check"
 
-  <span class="ok">✓</span> 01 Spec          intent-first · fits one build · every criterion testable
-  <span class="ok">✓</span>    Viability     feasible 4/5 · value 4/5 · risk 2/5 · engineer co-signed
-  <span class="ok">✓</span> 02 Design        3 screens · 9 states · signed off by product
-  <span class="live">●</span> 04 Build         round 1 · 6 helper agents · branch prd-booking
-    05 QA            checks every acceptance criterion, flag on and off
-    06 UAT           <span class="dim">waits for a person</span></pre>
+  <span class="ok">✓</span> Planned         what it does and how we will know it works
+  <span class="ok">✓</span> Approved        by your product owner
+  <span class="live">●</span> Building        on its own branch, tested as it goes
+    Ready to try    <span class="dim">waits for you to try it</span>
+    Live            <span class="dim">when you decide</span></pre>
 <pre data-mode-pane="run" hidden><span class="dim">workflow</span> daily content            <span class="dim">example</span>
 <span class="k">› 06:00</span>  Trends found        7 on X · 4 on LinkedIn, each with its sources
 <span class="k">› 06:04</span>  Drafts written      12 posts in the client's own voice
@@ -100,7 +99,7 @@
       <article class="card">
         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
         <h3>Software delivery</h3>
-        <p>Specs become pull requests: reviewed, designed, built behind a feature flag and tested against every acceptance criterion.</p>
+        <p>Your plans become working, tested software, delivered to your own repository.</p>
         <a class="more" href="services.html#delivery">Software delivery →</a>
       </article>
       <article class="card">
@@ -124,18 +123,15 @@
     <div class="band-head" style="margin-bottom:0">
       <span class="eyebrow">How the agents are held to account</span>
       <h2>Agents do the work. People hold the gates.</h2>
-      <p class="lede">Every piece of work passes a fixed set of gates. Agents produce what each gate needs; a named person decides at the ones that matter, with the reason recorded.</p>
-      <p class="lede">Each decision, each agent run and what it cost is on the record, so you can see how every change reached production.</p>
-      <div><a class="pill line" href="approach.html">The gates in detail</a></div>
+      <p class="lede">A named person makes every decision that matters, with the reason recorded.</p>
+      <p class="lede">Each decision and each change is on the record, so you can see how every change reached production.</p>
+      <div><a class="pill line" href="approach.html">How we work</a></div>
     </div>
-    <div class="gates" aria-label="The gates a change passes">
-      <div class="gate person"><b>Spec</b><span><strong>A person signs it.</strong> An agent reviews it first: is the outcome clear, does it fit one build, can every criterion be tested?</span></div>
-      <div class="gate person"><b>Viability</b><span>An agent scores it against your codebase; <strong>an engineer co-signs</strong> the score.</span></div>
-      <div class="gate person"><b>Design</b><span>An agent drafts the flows and states; <strong>a person signs off.</strong></span></div>
-      <div class="gate"><b>Build</b><span>An agent builds on its own branch, behind a feature flag. It never touches your main branch.</span></div>
-      <div class="gate"><b>QA</b><span>An agent runs the tests and checks every acceptance criterion, with the flag on and off.</span></div>
-      <div class="gate person"><b>Release</b><span><strong>A person accepts it</strong> and decides when it reaches your customers.</span></div>
-    </div>
+    <div class="gates" aria-label="How a change reaches production">
+      <div class="gate person"><b>Plan</b><span>You describe what you need. Agents turn it into a clear plan; <strong>a person approves it.</strong></span></div>
+      <div class="gate"><b>Build</b><span>Agents build and test it in your own repository, without touching what is live.</span></div>
+      <div class="gate person"><b>Launch</b><span><strong>You try it</strong> and decide when it reaches your customers.</span></div>
+</div>
   </div>
 </section>
 
