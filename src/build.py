@@ -17,6 +17,7 @@ FONTS = (
     "&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
 )
 NAV = [
+    ("agent-foundry.html", "Agent Foundry"),
     ("services.html", "Services"),
     ("approach.html", "How we work"),
     ("work.html", "Work"),
@@ -62,6 +63,7 @@ FOOTER = """<footer class="site-foot">
       <p>AI business automation. Agents build your software and run your workflows; your people decide at every gate.</p>
     </div>
     <nav class="foot-links" aria-label="Footer">
+      <a href="agent-foundry.html">Agent Foundry</a>
       <a href="services.html">Services</a>
       <a href="approach.html">How we work</a>
       <a href="work.html">Work</a>
