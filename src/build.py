@@ -18,8 +18,9 @@ FONTS = (
 )
 NAV = [
     ("agent-foundry.html", "Agent Foundry"),
+    ("blitz.html", "Blitz"),
+    ("draft-board.html", "Draft Board"),
     ("services.html", "Services"),
-    ("approach.html", "How we work"),
     ("work.html", "Work"),
     ("about.html", "About"),
 ]
@@ -28,6 +29,13 @@ MARK = """<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
   <path d="M9.5 8.5v8.2a6.5 6.5 0 0 0 13 0V8.5" fill="none" stroke="var(--accent-ink)" stroke-width="3.2" stroke-linecap="round"/>
   <circle cx="16" cy="9.6" r="2.1" fill="var(--accent-ink)"/>
 </svg>"""
+#: Short addresses that point at a product page: undefeatedsoftware.com/gtm and the like.
+REDIRECTS = {
+    "gtm.html": "blitz.html",
+    "crm.html": "draft-board.html",
+    "draftboard.html": "draft-board.html",
+    "agentfoundry.html": "agent-foundry.html",
+}
 ICON = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="#1e9fe3"/><path d="M9.5 8.5v8.2a6.5 6.5 0 0 0 13 0V8.5" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><circle cx="16" cy="9.6" r="2.1" fill="#fff"/></svg>"""
 
 
@@ -64,6 +72,8 @@ FOOTER = """<footer class="site-foot">
     </div>
     <nav class="foot-links" aria-label="Footer">
       <a href="agent-foundry.html">Agent Foundry</a>
+      <a href="blitz.html">Blitz</a>
+      <a href="draft-board.html">Draft Board</a>
       <a href="services.html">Services</a>
       <a href="approach.html">How we work</a>
       <a href="work.html">Work</a>
@@ -113,6 +123,13 @@ def build(out: Path, preview: bool) -> None:
     shutil.copy(HERE / "site.css", out / "site.css")
     shutil.copy(HERE / "site.js", out / "site.js")
     (out / "icon.svg").write_text(ICON)
+    for short, target in REDIRECTS.items():
+        (out / short).write_text(
+            f'<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
+            f'<meta http-equiv="refresh" content="0; url={target}">'
+            f'<link rel="canonical" href="{target}"><title>Undefeated Software</title></head>'
+            f'<body><a href="{target}">Continue</a></body></html>\n'
+        )
 
 
 if __name__ == "__main__":

@@ -385,3 +385,12 @@ body::before {
   .signup-card { padding: 28px; }
 }
 .page-hero .cta-row { justify-content: flex-start; }
+
+/* Product pages: each product's own colour on its hero and main buttons. */
+:root { --draft-board: #15803d; --blitz: #c2410c; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --draft-board: #4ade80; --blitz: #fb923c; } }
+:root[data-theme="dark"] { --draft-board: #4ade80; --blitz: #fb923c; }
+.product-draft-board { --tone: var(--draft-board); }
+.product-blitz { --tone: var(--blitz); }
+.product-hero { border-top: 6px solid var(--tone); }
+.product-hero .eyebrow { color: var(--tone); }
